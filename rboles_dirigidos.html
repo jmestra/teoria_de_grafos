@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Árboles Dirigidos |   </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="José Mestra Ponce, María Cuadrado Gonzales, Jaider Fray." />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.3.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent"> </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Actividad No. 12: Árboles</a></li>
+   <li><a href="contenido.html" class="no-ch">Contenido</a></li>
+   <li><a href="objetivos.html" class="no-ch">Objetivos</a></li>
+   <li><a href="metodologa.html" class="no-ch">Metodología</a></li>
+   <li id="active"><a href="rboles_dirigidos.html" class="active no-ch">Árboles Dirigidos</a></li>
+   <li><a href="arboles_narios.html" class="no-ch">Arboles N-arios</a></li>
+   <li><a href="autoevaluacin.html" class="no-ch">Autoevaluación</a></li>
+   <li><a href="crditos.html" class="no-ch">Créditos</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="metodologa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="arboles_narios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Árboles Dirigidos</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id17">
+<div class="iDevice emphasis0">
+<div id="ta17_85" class="block iDevice_content">
+<div class="exe-fx exe-tabs">
+<h2>Definición</h2>
+<h3 style="text-align: center;"><span style="font-size: 14pt; color: #993366;">Árboles dirigidos o diarboles<br /></span></h3>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Un dígrafo conexo D que posee circuitos ni semicircuitos se llama un arbol dirigido o diarbol.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">La figura 1 muestra un diarbol T.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p><strong><span style="font-size: 10pt;">Figura 1.</span></strong></p>
+<hr />
+<p></p>
+<p><img src="1.png" alt="1" style="display: block; margin-left: auto; margin-right: auto;" width="490" height="252" /></p>
+<hr />
+<p></p>
+<h2>Características de los diarboles</h2>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Los diarboles son de gran importancia en muchas aplicaciones tales como análisis de redes eléctricas, teoría de juego, teoría de lenguaje y programación de computadoras. Las propiedades dadas para los árboles son válidas también para los diarboles, teniendo en cuenta la dirección de los arcos.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Una clase de diarboles que merece mención por su utilidad son las llamadas arborescencia que continuación definimos:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Un diarbol T se llama arborescencia si:</span></p>
+<ol style="list-style-type: upper-alpha;">
+<li style="text-align: justify;"><span style="font-size: 12pt;">En <span style="font-family: courier new, courier, monospace;">T</span> existe un único vértice <span style="font-family: courier new, courier, monospace;">Vr</span> tal que <span style="font-family: courier new, courier, monospace;">g-(Vr)=0 y b)</span> Para cualquier otro vértice <span style="font-family: courier new, courier, monospace;">V,g-(V)=1</span>, el vértice <span style="font-family: courier new, courier, monospace;">Vr</span> se llama la raíz de la arborescencia.</span></li>
+</ol>
+<p><span style="font-size: 12pt;"> </span></p>
+<p><strong><span style="font-size: 10pt;">Figura 2.</span></strong></p>
+<hr />
+<h4><span style="font-size: 12pt;"><img src="2.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="416" height="261" /></span></h4>
+<hr />
+<h4><span style="font-size: 12pt;"> </span></h4>
+<h4><span style="font-size: 12pt;">Teorema 1.</span></h4>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Un dígrafo T es una arborescencia si y solo si todo vértice es accesible desde la raíz y esta no es accesible desde ningún vértice.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Demostración: sea <span style="font-family: courier new, courier, monospace;">T</span> una arborescencia y sea <span style="font-family: courier new, courier, monospace;">Vr</span> la raíz de T. sea C un camino en T cuyo vértice inicial es Vr, C puede ser extendido hasta llegar a un vértice pendiente, porque de otra forma en T existiría algún vértice V con g- (V) &gt; 1. Lo cual es una contradicción.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Como T es un dígrafo conexo, todo vértice V se encuentra en algún camino con vértice inicial Vr y con vértice terminal un vértice pendiente. Supongamos que T es un diarbol en el que todo vértice es accesible desde la raíz Vr y Vr no es accesible desde ningún vértice de T entonce:</span></p>
+<ol style="list-style-type: lower-alpha;">
+<li style="text-align: justify;"><span style="font-size: 12pt;"> El grado negativo de cualquier vertice V ≠ Vr es al menos 1, esto es g- (V) ≥ 1, pero como |A(T)| = n – 1 (siendo n = |V(T)| ) y ∑𝑔 − 𝑛 𝑖=1 (𝑉𝑖) = 𝑛 – 1, es decir, la suma de los grados negativos de los vértices es igual al número de arcos, entonces g – (Vi) = 1 para i = 1, … n. esto significa que todos los vértices diferentes de la raíz Vr tien grafo negativo 1 y</span></li>
+<li style="text-align: justify;"><span style="font-size: 12pt;">Como Vr no es accesible desde ningún otro vértice, entonces g- (Vr) = 0. Luego T es una arborescencia.</span></li>
+</ol>
+<p><span style="font-size: 12pt;"> </span></p>
+<p><span style="font-size: 12pt;"><strong>1.</strong> <strong>Arborescencia T.</strong></span></p>
+<p><span style="font-size: 12pt;"> Se llama arborescencia binaria si el grado positivo de todo vértice no pendiente es 2 (Figura. 3).</span></p>
+<p><span style="font-size: 12pt;"> </span></p>
+<p><strong><span style="font-size: 10pt;">Figura 3.</span></strong></p>
+<hr />
+<p><img src="3.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="307" height="289" /></p>
+<hr />
+<p><span style="font-size: 12pt;"><strong> </strong></span></p>
+<p><span style="font-size: 12pt;"><strong>2. Ordenamiento transversales de arborescencias.</strong> </span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Sea T una arborescencia. Un ordenamiento transversal de T es un orden de su conjunto de vértice <span style="font-family: courier new, courier, monospace;">V(T)</span>, tal que dados dos vértices Vi y Vj de V(T) se tiene:</span><span style="font-size: 12pt;"></span></p>
+<ol style="list-style-type: upper-alpha;">
+<li style="text-align: left;"><span style="font-size: 12pt; font-family: courier new, courier, monospace;">Si r -(Vi) = r -(Vj) entonces [ o Vi esta relacionado con Vj, Vi Vj, o Vj esta relacionado con Vi, Vj Vi]</span></li>
+<li style="text-align: left;"><span style="font-size: 12pt; font-family: courier new, courier, monospace;">Si r -(Vi) ≠ r -(Vj) entonces no esta relacionado con Vj, Vi Vj</span><br /><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></li>
+</ol>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Esto significa que un ordenamiento transversal origina un ordenamiento total en el conjunto de sucesores de cada vértice de T</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>Ejemplo:</strong> </span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Consideremos la arborescencia de la figura. 4 el ordenamiento transversal de esta.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><strong><span style="font-size: 10pt;">Figura 4.</span></strong></p>
+<hr />
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"><img src="4.png" alt="4" style="display: block; margin-left: auto; margin-right: auto;" width="304" height="228" /></span></p>
+<hr />
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">Arborescencia se obtiene observando que <span style="font-family: courier new, courier, monospace;">r-(b)=r-(c)=r-(a)</span> por lo tanto<span style="font-family: courier new, courier, monospace;"> b o d;r-(e)=r-(f)=r-(b)</span> entonces <span style="font-family: courier new, courier, monospace;">e f;r-(g)=r-(h)={d}</span> entonces <span style="font-family: courier new, courier, monospace;">g h</span>.</span></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"> </span></p>
+<p><strong><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;">3. Orden de Tarry y orden reverso de Tarry.</span></strong></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Dado un ordenamiento transversal de una arborescencia <span style="font-family: courier new, courier, monospace;">T</span>, podemos construir un ordenamiento total 𝛼 de <span style="font-family: courier new, courier, monospace;">V(T)</span> que es compatible con, en el que para todo par de vértices <span style="font-family: courier new, courier, monospace;">Vj, Vi ∈ V(T</span>), con Vi Vj, también se tiene que <span style="font-family: courier new, courier, monospace;">Vi 𝛼 Vj</span>. Un ordenamiento total se puede dar de diferentes formas. Una de tales formas es el ordenamiento de terry.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Un ordenamiento total o se llama un orden de Tarry, si para todo par de vértices <span style="font-family: courier new, courier, monospace;">Vi,Vj ∈V(T)</span>, se cumple:</span></p>
+<ol style="list-style-type: upper-alpha;">
+<li style="text-align: justify;"><span style="font-size: 12pt;">Si <span style="font-family: courier new, courier, monospace;">Vi</span> es un ascendente de Vj, entonces <span style="font-family: courier new, courier, monospace;">Vi o Vj</span> y </span></li>
+<li style="text-align: justify;"><span style="font-size: 12pt;">Si <span style="font-family: courier new, courier, monospace;">Vi Vj,</span> entonces para todo Vi ∈ r +(Vi) y todo <span style="font-family: courier new, courier, monospace;">Vj ∈ r-(Vj) Vi o Vj</span> </span></li>
+</ol>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Si en la condición (A) cambiamos ascendente por descendente obtenemos otro ordenamiento total de <span style="font-family: courier new, courier, monospace;">V(T)</span> llamado ordenamiento reverso de Tarry. Dada una arborescencia, estos ordenamientos se pueden realizar de acuerdo a la siguiente regla:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Partimos de la raíz y recorremos el resto de vértices. Sea <span style="font-family: courier new, courier, monospace;">Vi</span> un vértice alcanzado en el recorrido. Si vi tiene algún sucesor que no ha sido alcanzado todavía, procedemos hacerlo (teniendo en cuenta el ordenamiento transversal). Si no queda ningún sucesor de vi que no haya sido alcanzado, regresamos al predecesor de Vi y repetiremos el proceso anterior hasta haber agotado todos los sucesores regresaremos a la raíz. Aquí termina el proceso.Entonces el orden de tarry (o el orden reverso de tarry) es el orden en el cual todos los vértices son alcanzados en el recorrido del árbol.</span><span style="font-size: 12pt;"></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Para la arborescencia de la figura 2 tenemos el siguiente orden de tarry y orden reverso respectivamente.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Entonces en el ordenamiento de tarry los vértices aparecen en el siguiente orden: <span style="font-family: courier new, courier, monospace;">a b e f c d g i h</span> y en el ordenamiento reverso el orden es: <span style="font-family: courier new, courier, monospace;">e f b c i g b d a</span>.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;"><strong>Figura 5.</strong></span></p>
+<hr />
+<p><span style="font-size: 12pt;"><img src="5.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="439" height="326" /></span></p>
+<hr />
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><strong><span style="font-size: 12pt;">4. Orden simétrico.</span></strong></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Sea <span style="font-family: courier new, courier, monospace;">T</span> una arborescencia binaria con un ordenamiento transversal. Otro ejemplo de orden total sobre <span style="font-family: courier new, courier, monospace;">V(T)</span> el cual es compatible con el orden simétrico <span style="font-family: courier new, courier, monospace;">T</span> definido en la siguiente forma: si<span style="font-family: courier new, courier, monospace;"> Vk</span> es un vértice no pendiente de<span style="font-family: courier new, courier, monospace;"> V(T)</span> que tiene como sucesores <span style="font-family: courier new, courier, monospace;">Vi y Vj</span> con <span style="font-family: courier new, courier, monospace;">Vi V</span>j, entonces:</span></p>
+<ol style="list-style-type: upper-alpha;">
+<li style="text-align: justify;">
+<p><span style="font-size: 12pt;"><span style="font-family: courier new, courier, monospace;">Vi T Vk</span> para todo vértice <span style="font-family: courier new, courier, monospace;">Vi ∈ r+(Vi)</span> y</span></p>
+</li>
+<li style="text-align: justify;">
+<p><span style="font-size: 12pt;"><span style="font-family: courier new, courier, monospace;">Vk T Vj</span> para todo vértice <span style="font-family: courier new, courier, monospace;">Vj ∈ r+(Vj)</span></span><span style="font-size: 12pt;"><span style="font-family: courier new, courier, monospace;"></span></span></p>
+</li>
+</ol>
+<p><span style="font-size: 12pt;"><span style="font-family: courier new, courier, monospace;"> </span></span></p>
+<p><strong><span style="font-size: 10pt; font-family: arial, helvetica, sans-serif;">Figura 6.</span></strong></p>
+<hr />
+<p><span style="font-size: 12pt;"><span style="font-family: courier new, courier, monospace;"><img src="6.png" alt="6" style="display: block; margin-left: auto; margin-right: auto;" width="407" height="304" /></span></span></p>
+<hr />
+<p style="text-align: justify;"><span style="font-size: 12pt;">El orden transversal en:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><span style="font-family: courier new, courier, monospace;">b≤c</span>,  <span style="font-family: courier new, courier, monospace;">d≤e</span>,  <span style="font-family: courier new, courier, monospace;">f≤g  </span>y  <span style="font-family: courier new, courier, monospace;">h≤i</span></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Y la lista de los vértices de acuerdo al orden simétrico es: <span style="font-family: courier new, courier, monospace;">d b e a f c h g i.</span></span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">El orden simétrico de una arborescencia binaria se obtiene fácilmente recorriendo el árbol en la manera descrita anteriormente y listamos los vértices en el orden en el que encontrados en el recorrido.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><strong><span style="font-size: 12pt;">5. Ordenamiento lexicografico de un texto.</span></strong></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Supongamos que tenemos un texto escrito y se requiere una lista de las palabras que aparecen en el texto en el orden lexicográfico (orden en que aparecen en el diccionario). Una forma de resolver este problema se puede obtener examinando el texto desde el comienzo hasta el final e ir construyendo una arborescencia binaria y “ROTULADA” en la siguiente forma:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Inicialmente la arborescencia T consta de un solo vértice en el cual esta rotula con el símbolo #. Seguidamente cuando leemos cada palabra P del texto, recorremos la arborescencia partiendo de su raíz y aplicamos el siguiente algoritmo.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>Paso 1.</strong> Sea Vp el vértice alcanzado y sea rp su rotulo. Si rp es el símbolo # vaya al paso 2: Si rp es una palabra lexicográficamente inferior a p (esta antes en el diccionario}. Vaya al paso 4:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Si rp es una palabra lexicográficamente superior a p vaya al paso 3; y si rp es una palabra p vaya al fin.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>Paso 2.</strong> Reemplace el rotulo # de Vp per la palabra p. adicione dos nuevos vértices a la arborescencia un “sucesor izquierdo” y un “sucesor derecho" de Vp y rotulemos ambos con el símbolo #; entonces vaya a fin.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>Paso 3.</strong> Avance al sucesor derecho de Vp, entonces repita el paso 1.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>Paso 4.</strong> Avance al sucesor izquierdo de Vp, entonces repita el paso 1 Fin.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Como una ilustración, consideremos el siguiente texto:” La casa de mi hermano está lejos de aquí y es muy difícil tomar transporte para llegar allá“</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;"><strong>Figura 7.</strong></span></p>
+<hr />
+<p><img src="img6.png" alt="7" style="display: block; margin-left: auto; margin-right: auto;" width="600" height="399" /></p>
+<hr />
+<p style="text-align: justify;"><span style="font-size: 12pt;">Si hacemos un ordenamiento simétrico de los vértices de la arborescencia binaria construida (recorriendo la arborescencia en la manera descrita previamente) y haciendo la lista da los rétulos de los vértices en este orden, obtenemos las palabras del texto en el orden lexicográfico, con el símbolo # delante y después de cada palabra. Para esta arborescencia tenemos:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"># allá # aquí # casa # de # difícil # es # esta # hermano # la # lejos # llegar # mi # muy # para # tomar # transporte # y #</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Las arborescencias binarias de ésta clase son usadas con frecuencia en compiladores. Para elaborar una lista (o diccionario) que de información acerca de las variables cuyos nombres aparecen en el texto de un programa.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><strong><span style="font-size: 12pt;">6. Problema de la travesía del agente viajero (T.A.V).</span></strong></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Este problema se refiere a la siguiente situación: Dado un grafo pesado G se pide encontrar al ciclo de Hamilton o la cadena de Hamilton con mínimo peso.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Una aproximación a la solución de éste problema se puede obtener buscando una cota inferior, mediante el uso de árbol cobertor mínimo ( A.C.M) que fue hallado usando el algoritmo de kruskal en la siguiente forma:</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Supongamos que la arista <span style="font-family: courier new, courier, monospace;">(xi, xj)</span> está en el ciclo optimo que resuelve el problema T.A.V., si esta arista se suprime del ciclo, se obtiene una cadena simple con <span style="font-family: courier new, courier, monospace;">n-1</span> aristas que recorre todos los vértices de G desde xi hasta <span style="font-family: courier new, courier, monospace;">xj</span>.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Como el árbol cobertor mínimo (su peso) es una cota inferior de esta cadena, el peso del árbol cobertor mínimo más <span style="font-family: courier new, courier, monospace;">p(xi, xj)</span> es una cota inferior del peso del ciclo de Hamilton que resuelve el problema T.A.V.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">En general ninguna arista <span style="font-family: courier new, courier, monospace;">(xi, xj)</span> en el ciclo optimo será conocida, pero la arista de mayor peso en el ciclo debe ser al menos como el</span></p>
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: courier new, courier, monospace;">Max{p(xi,S)}</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Donde <span style="font-family: courier new, courier, monospace;">S</span> es el segundo vértice más cercano a <span style="font-family: courier new, courier, monospace;">xi</span>, esto es:</span></p>
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: courier new, courier, monospace;">P(A.C.M)+max{(xi,S)}</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Es una cota inferior valida al peso del ciclo que resuelve el problema de la T.A.V</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Sea un grafo pesado con<span style="font-family: courier new, courier, monospace;"> n</span> vértices, dado un árbol cobertor<span style="font-family: courier new, courier, monospace;"> T</span> de <span style="font-family: courier new, courier, monospace;">G</span> definimos la proximidad de <span style="font-family: courier new, courier, monospace;">Er</span> del árbol <span style="font-family: courier new, courier, monospace;">T</span> a una cadena de Hamilton por:</span></p>
+<p style="text-align: center;"><span style="font-size: 12pt; font-family: courier new, courier, monospace;">Er=∑((xi)-2) g(xi)&gt;2</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Donde <span style="font-family: courier new, courier, monospace;">g(x)</span> es el grado del vértice <span style="font-family: courier new, courier, monospace;">x</span> en <span style="font-family: courier new, courier, monospace;">T</span>.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">El mayor valor de <span style="font-family: courier new, courier, monospace;">E</span> es la mayor desviación del árbol <span style="font-family: courier new, courier, monospace;">T</span> desde una cadena de Hamilton. Resolvemos el problema de hallar la cadena de hamilton minima: es hallar un árbol cobertor mínimo <span style="font-family: courier new, courier, monospace;">T</span> del grafo <span style="font-family: courier new, courier, monospace;">G</span> tal que el grado de cada vértice no exceda a 2, esto es, si <span style="font-family: courier new, courier, monospace;">T</span> es un árbol cobertor de un grafo <span style="font-family: courier new, courier, monospace;">G</span>, para el cual el grado de sus vértices es menor o igual a 2, entonces <span style="font-family: courier new, courier, monospace;">T</span> es una cadena de Hamilton.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Demostración: puesto que <span style="font-family: courier new, courier, monospace;">T</span> es un árbol ninguno vértice tiene grado cero y por lo tanto en <span style="font-family: courier new, courier, monospace;">T g(xi)=1</span> o<span style="font-family: courier new, courier, monospace;"> g(xi)=2</span> para todo<span style="font-family: courier new, courier, monospace;"> i</span>.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Sea <span style="font-family: courier new, courier, monospace;">p</span> el número de vértices de grado<span style="font-family: courier new, courier, monospace;"> 1</span> entonces <span style="font-family: courier new, courier, monospace;">n–p</span> tienen grado <span style="font-family: courier new, courier, monospace;">2</span>, entonces el número de aristas de<span style="font-family: courier new, courier, monospace;"> T</span> es;</span></p>
+<p><span style="font-size: 12pt;"><img src="Captura.PNG" alt="F1" style="display: block; margin-left: auto; margin-right: auto;" width="277" height="191" /><br /></span></p>
+<p><span style="font-size: 12pt;">Por tanto, <span style="font-family: courier new, courier, monospace;">T</span> posee dos vértices de grado 1, lo cual implica que es una cadena de Hamilton</span></p>
+<p><span style="font-size: 12pt;"><strong>Ejemplo:</strong> </span></p>
+<p><span style="font-size: 12pt;">Sea<span style="font-family: courier new, courier, monospace;"> G</span> un grafo completo con 6 vértices cuya matriz de pesos es la siguiente:</span></p>
+<p><span style="font-size: 10pt;"><strong><img src="Captura_2.png" alt="F2" style="display: block; margin-left: auto; margin-right: auto;" width="301" height="161" /><br /></strong></span></p>
+<p><span style="font-size: 12pt;">Encuentre la cadena de Hamilton con mínimo peso.</span></p>
+<p><strong><span style="font-size: 12pt;">Solución:</span></strong></p>
+<p><span style="font-size: 12pt;">Usando el algoritmo de Krukal, hallamos el A.C.H.</span></p>
+<p><span style="font-size: 12pt;"> </span></p>
+<p><span style="font-size: 10pt;"><strong>Figura 8.</strong></span></p>
+<hr />
+<p><span style="font-size: 12pt;"><img src="8.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="422" height="355" /></span></p>
+<hr />
+<p><span style="font-size: 12pt;">Llamemos este árbol <span style="font-family: courier new, courier, monospace;">Ta</span> y <span style="font-family: courier new, courier, monospace;">p(Ta)</span> = 22</span></p>
+<p><span style="font-size: 12pt;">Puesto que en <span style="font-family: courier new, courier, monospace;">Ta g(xi)=3</span>, Ta no es una cadena Hamilton</span></p>
+<p><span style="font-size: 12pt;">Entonces una de las aristas <span style="font-family: courier new, courier, monospace;">(x1, x2), (x3, x6), (x2, x5)</span> deben desaparecer en la solución final. La solución al problema original es una solución de al menos uno de los tres subproblemas representados en el árbol de decisión de la siguiente figura:</span></p>
+<p><span style="font-size: 12pt;"> </span></p>
+<p><span style="font-size: 10pt;"><strong>Figura 9.</strong></span></p>
+<hr />
+<p><span style="font-size: 12pt;"><img src="9.png" alt="9" style="display: block; margin-left: auto; margin-right: auto;" width="380" height="224" /></span></p>
+<hr />
+<p style="text-align: justify;"><span style="font-size: 12pt;">En este árbol el vértice <span style="font-family: courier new, courier, monospace;">A</span> representa el problema original y los vértices <span style="font-family: courier new, courier, monospace;">B, C, y D</span> representa los problemas cuyas matrices de pesos son las mismas que <span style="font-family: courier new, courier, monospace;">C</span>, reemplazando los pesos de las aristas <span style="font-family: courier new, courier, monospace;">(x2, x1), (x2, x6), (x2, x5)</span> por infinito.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Usando cada una de estas matrices <span style="font-family: courier new, courier, monospace;">C21, C26 y C25</span> hallamos los arboles cobertores <span style="font-family: courier new, courier, monospace;">Tb, Tc y Td</span> respectivamente.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"> </span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt;"><strong>Figura 10.</strong></span></p>
+<hr />
+<p><span style="font-size: 12pt;"><img src="10.1.png" alt="10" style="display: block; margin-left: auto; margin-right: auto;" width="588" height="246" /><br /></span></p>
+<hr />
+<p style="text-align: justify;"><span style="font-size: 12pt;">En el árbol de decisión el número próximo a cada vértice es el peso del árbol cobertor mínimo correspondiente al subproblema definido por el vértice. Se pueda notar que en alguna etapa en el árbol de decisión al menor peso de los vértices pendientes es una cota inferior del peso de la respuesta final.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">En este ejercicio los arboles <span style="font-family: courier new, courier, monospace;">Tb y Td</span> son cadenas de Hamilton. mientras el árbol <span style="font-family: courier new, courier, monospace;">Tc</span> no lo es. La solución al problema es <span style="font-family: courier new, courier, monospace;">Tb</span> . Una rama adicional desde <span style="font-family: courier new, courier, monospace;">Tc</span> en el árbol de decisión no es necesaria puesto que cualquier cadena de Hamilton que resulte desde allá tendrá un peso al menos 24 que es mayor que 23.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;">Luego hemos hallado una respuesta optima a este problema particular aplicando solo 4 veces el algoritmo de Kruskal.</span></p>
+<p style="text-align: justify;"><strong> </strong></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"><strong>8. Árboles de decisión.</strong></span></p>
+<p><span style="font-size: 12pt;">Cada vértice interno de un árbol de decisión representa una decisión, y los posibles resultados de la decisión, se representan por las aristas que conducen al siguiente nivel. El resultado final del proceso está representado por las hojas del árbol. Si el resultado de cada decisión es simplemente que una afirmación es cierta o es falsa, tenemos un árbol binario.</span></p>
+<p style="text-align: justify;"><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+</div>
+<p></p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="metodologa.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="arboles_narios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<script type="text/javascript" src="my_js.js"></script></body></html>
